@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <title>Anton Bozich</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Anton Bozich">    
+<link rel="shortcut icon" href="/static/img/profile.png">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+<!-- Global CSS -->
+<link rel="stylesheet" href="/static/assets/plugins/bootstrap/css/bootstrap.min.css">   
+<!-- Plugins CSS -->
+<link rel="stylesheet" href="/static/assets/plugins/font-awesome/css/font-awesome.css">
+
+<!-- github calendar css -->
+<link rel="stylesheet" href="/static/assets/plugins/github-calendar/dist/github-calendar.css"/>
+<!-- github acitivity css -->
+<link rel="stylesheet" href="/static/assets/plugins/github-activity/src/github-activity.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+<!-- Theme CSS -->  
+<link id="theme-style" rel="stylesheet" href="/static/assets/css/styles.css">
+<link rel="stylesheet" href="/static/assets/base.css">
+<link rel="stylesheet" href="/static/assets/style.css">
+
+<script type="text/javascript" src="/static/assets/plugins/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/statoc/assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+<script type="text/javascript" src="/static/assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+<!-- github calendar plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+<script type="text/javascript" src="/static/assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+<!-- github activity plugin -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src="/static/assets/plugins/github-activity/src/github-activity.js"></script>
+<!-- custom js -->
+<script type="text/javascript" src="/static/assets/js/main.js"></script> 
+    
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+    <div class="container">                       
+        <img class="profile-image img-responsive pull-left" src="/static/img/profile.png" style='max-height: 180px;'>
+        <div class="profile-content pull-left">
+            <h1 class="name">bozich</h1>
+            <h2 class="desc"> <br> <br>
+                The Same Anton 👑<br> <br>
+                I like JavaScript / NodeJS backend programming 🖤<br> <br>
+                Contact me in Telegram, Instagram, GitHub 💬 <br> <br>
+            </h2>   
+            <ul class="social list-inline">
+                <li><a href="http://instagram.com/same.anton"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="http://github.com/bozich"><i class="fa fa-github-alt"></i></a></li>                 
+            </ul> 
+        </div><!--//profile-->
+        <a class="btn btn-cta-info pull-right" href="http://t.me/same_anton" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
+    </div><!--//container-->
+<br><br><br>
+    <div class="section-inner" id='search' style='margin: auto; max-width: 300px; text-align: center;'>
+        <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+        <div class="content">
+            <form action="" name="searchf" method="get">
+            <input type="text" name="searchin" class="form-control" placeholder="Search">
+            <button class="btn btn-outline-secondary" type="success" id="" style='margin-top: 10px;'>Search</button>
+            </form>
+        </div><!--//content-->  
+    </div><!--//section-inner--> 
+</header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+    
+                <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Projects / Products</h2>
+                        <form action="" name="searchf" method="get">
+                        <input type="text" name="searchp-in" class="form-control" placeholder="Search">
+                        <div class="text-right">
+                            <button class="btn btn-outline-secondary" type="success" id="" style='margin-top: 10px;'>Search</button>
+                        </div>
+                        </form>
+                        <div class="content" id='products-field'>
+                            
+                            
+                                    <p>No products yet...</p>
+                            
+                        </div><!--//content-->                     
+                        <br><h4 class="">All Projects are else on <a href='http://github.com/bozich'>GitHub</a></h4>
+                    </div><!--//section-inner-->  
+               
+                </section><!--//section-->
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Best Products</h2>
+                        <div class="content">    
+                            None
+                            <br><br><p>*If you want to vote project, send star on GitHub product version.</p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->  
+               
+                </section><!--//section-->
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Articles</h2>
+                        <form action="" name="searchf" method="get">
+                        <input type="text" name="searcha-in" class="form-control" placeholder="Search">
+                        <div class="text-right">
+                            <button class="btn btn-outline-secondary" type="success" id="" style='margin-top: 10px;'>Search</button>
+                        </div>
+                        </form>
+                        <div class="content" id='articles-field'>
+                            
+                            
+                                    <p>No articles yet...</p>
+                            
+                        </div><!--//content-->                  
+                        <br><h4 class="">All Articles are else on <a href='https://github.com/bozich/bozich/tree/main/articles'>GitHub</a></h4>
+                    </div><!--//section-inner-->  
+               
+                </section><!--//section-->
+                
+            </div>
+
+
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+    
+    <style>
+        @media screen and (max-width: 991px) {
+            #navigation {
+                display: none;
+            }
+        }
+    </style>
+    <aside class="info aside section" id='navigation'>
+        <div class="section-inner">
+            <h2 class="heading">Navigation</h2>
+            <div class="content">
+                <ul class="list-unstyled" class='text-center'>
+                    <li><a href='/'>Home</a></li>
+                    <h3>Newest Article!</h3>
+                    
+                    
+                            <p>No articles yet...</p>
+                    
+                    <h3>Newest Product!</h3>
+                    
+                    
+                            <p>No products yet...</p>
+                    
+                </ul>
+            </div><!--//content-->  
+        </div><!--//section-inner-->                 
+    </aside><!--//aside-->
+
+
+    <aside class="info aside section">
+       <div class="section-inner">
+           <h2 class="heading">About me: basic</h2>
+           <div class="content">
+               <ul class="list-unstyled">
+                   <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="bozich.dev@gmail.com">bozich.dev@gmail.com</a></li>
+                   <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="http://www.bozich.me">http://www.bozich.me</a></li>
+               </ul>
+           </div><!--//content-->  
+       </div><!--//section-inner-->                 
+   </aside><!--//aside-->
+   
+   
+          
+   
+   <aside class="blog aside section">
+       <div class="section-inner">
+           <h2 class="heading">Latest Blog Posts</h2>
+           No posts.
+       </div><!--//section-inner-->
+   </aside><!--//section-->
+   
+ 
+</div><!--//secondary--> 
+
+
+        </div>
+    </div>
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright">Footer</small>
+        </div>
+    </footer>
+ 
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Anton Bozich">    
+<link rel="shortcut icon" href="/static/img/profile.png">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+<!-- Global CSS -->
+<link rel="stylesheet" href="/static/assets/plugins/bootstrap/css/bootstrap.min.css">   
+<!-- Plugins CSS -->
+<link rel="stylesheet" href="/static/assets/plugins/font-awesome/css/font-awesome.css">
+
+<!-- github calendar css -->
+<link rel="stylesheet" href="/static/assets/plugins/github-calendar/dist/github-calendar.css"/>
+<!-- github acitivity css -->
+<link rel="stylesheet" href="/static/assets/plugins/github-activity/src/github-activity.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+<!-- Theme CSS -->  
+<link id="theme-style" rel="stylesheet" href="/static/assets/css/styles.css">
+<link rel="stylesheet" href="/static/assets/base.css">
+<link rel="stylesheet" href="/static/assets/style.css">
+
+<script type="text/javascript" src="/static/assets/plugins/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/statoc/assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+<script type="text/javascript" src="/static/assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+<!-- github calendar plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+<script type="text/javascript" src="/static/assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+<!-- github activity plugin -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src="/static/assets/plugins/github-activity/src/github-activity.js"></script>
+<!-- custom js -->
+<script type="text/javascript" src="/static/assets/js/main.js"></script> 
+</body>
+</html>
