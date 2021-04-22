@@ -1,93 +1,36 @@
 # Linux Terminal Basics
 ## Here we will learn basics Linux terminal commands (using [Ubuntu](http://ubuntu.com))
-
 ___
-# ls
+`ls dir` - listing `dir`
 
-Syntax:
-`ls dir`
-
-(Listing `dir`)
-
-Example:
-
-`ls /home`:
-
-`user1 user2`
+`ls` - listing selected (*this*) dir
 
 
-___
 
-# cd
+`cd dir` - selects `dir`
 
-Syntax:
-`cd dir`
+`cd` - selects `/home`
 
-(moving)
+`cd /` - selects "root"/main dir
 
-Example:
+`mkdir dir` - making **empty** `dir` *here*
 
-`user@device:~$ cd Desktop`
+`rmdir dir` - removing only **empty** `dir`'s, else: error
 
-`user@device~/Desktop$ _`
+`rm -r dir` - removing `dir` recursive (with files, too)
 
-___
+`touch file` - making or updating **empty** `file`
 
-# mkdir
+`rm file` - removing `file`
 
-Syntax:
-`mkdir dir`
+`cat file` - shows `file`
 
-(Makes empty `dir` in selected directory)
+`less file` - shows `file` (full window)
 
-Example:
+`nano file` - opening `file` in NANO editor
 
-`$ mkdir dir22`
+\*nano: `Ctrl+O` - save, nano:`Ctrl+X` - close
 
-`$ ls`
+`vi file` - opening `file` in VIM editor
 
-*`any_dir dir22`*
-
-___
-
-# rmdir
-
-Syntax:
-`rmdir dir`
-
-(Removes *empty* `dir`)
-
-Example:
-
-`$ mkdir dir22`
-
-`$ ls`
-
-`any_dir dir22`
-
-`$ ls dir22`
-
-[Nothing]
-
-`$ rmdir dir22`
-
-`$ ls`
-
-`any_dir`
-
-___
-
-# How to remove not empty dir or file? `rm`
-
-Syntax:
-`rm anything`
-
-(Removes `anything` - file)
-
-### Removing not empty dir:
-
-`$ rm -r dir`
-
-(`-r` - recursive)
-
-
+\*After opening `vi`, press \[I] (**I**nsert) to edit file. Press \[esc] than type ":wq" to save and exit (`:q` - **Q**uit, `:w` - **W**rite)
