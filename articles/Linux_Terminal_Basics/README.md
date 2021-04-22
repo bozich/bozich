@@ -1,12 +1,12 @@
 # Linux Terminal Basics
 ## Here we will learn basics Linux terminal commands (using [Ubuntu](http://ubuntu.com))
 ___
+
+# Files
+
 `ls dir` - listing `dir`
 
 `ls` - listing selected (*this*) dir
-
-
-# Files
 
 `cd dir` - selects `dir`
 
@@ -47,7 +47,7 @@ ___
 `cp file1 file2` - copies `file1` as `file2` to *here*
 
 `cp file1 dir/` - copies `file1` to `dir`
-
+___
 # Users
 
 `sudo adduser username` - adds user. It'll ask new password etc...
@@ -61,7 +61,7 @@ ___
 `sudo passwd username` - change password for user.
 
 \* If in `/home` is folder of deleted user: `cd /home` > `sudo rm -r userdir`
-
+___
 # Networking
 
 `ping host` - ping `host`
@@ -73,7 +73,7 @@ ___
 `curl url` - outputs webpage from `url`
 
 `curl -o file.html url` - writes the page from `url` to `file.html`
-
+___
 # System info
 
 `date` - shows date, time for *now*
