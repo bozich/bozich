@@ -1,4 +1,4 @@
-# Anton Bozich's Site!
+# [Anton Bozich](http://bozich.github.io)
 
 
 * Hello, I am Anton
