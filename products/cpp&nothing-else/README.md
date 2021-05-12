@@ -202,20 +202,16 @@ num = 12 // ошибка!
 
 Вы же знаете про арифметические операторы (+, -, *, /). Вот их таблица:
 
-> В ниже представленой таблице все операторы расположены по порядку возростания приоритета.
 
-> Чем ниже приоритет у оператора, тем первее он будет действовать относительно других (в выражении, конечно).
-
-
-|Приоритет | Оператор             | Символ | Пример | Операция |
-||----------------------|:------:|:-----:|----------:|
-|| Сложение             | +      | x + y  | x плюс у |
-|| Вычитание            | -      | x - y  | х минус у |
-|| Умножение            | *      | x * y  | х умножить на у |
-|| Деление              | /      | x / y  | х делить на у |
-|| Остаток при делении  | %      | x % y  | Остаток от деления х на у |
-|| Префиксный инкремент | ++     | **++х**| x плюс 1 | 
-|| Префиксный инкремент | --     | **--х**| x минус 1 | 
+| Оператор             | Символ | Пример | Операция |
+|----------------------|:------:|:-----:|----------:|
+| Сложение             | +      | x + y  | x плюс у |
+| Вычитание            | -      | x - y  | х минус у |
+| Умножение            | *      | x * y  | х умножить на у |
+| Деление              | /      | x / y  | х делить на у |
+| Остаток при делении  | %      | x % y  | Остаток от деления х на у |
+| Префиксный инкремент | ++     | **++х**| x плюс 1 | 
+| Префиксный инкремент | --     | **--х**| x минус 1 | 
 
 
 > **Префиксный** инкремент - это значение. То есть `++x` идентично `x + 1`. 
@@ -237,16 +233,21 @@ num = 12 // ошибка!
 # Операторы присваивания
 
 
-|Приоритет | Оператор                          | Символ | Пример | Операция                                   | Другими словами |
-|---------|-----------------------------------|:------:|:------:|:------------------------------------------:|----------------:|
-|| Присваивание                      | =      | x = y  | х присваиваеться значение y                | х становиться равно y
-|| Сложение с присваиванием          | +=     | x += y | х присваиваеться x + y                     | х = х + у
-|| Вычитание с присваиванием         | -=     | x -= y | х присваиваеться х - у                     | х = х - у
-|| Умножение с присваиванием         | *=     | x *= y | х присваиваеться х * у                     | х = х * у
-|| Деление с присваиванием           | /=     | x /= y | х присваиваеться х / у                     | х = х / у
-|| Остаток от деления с присваиванием| %=     | x %= y | х присваиваеться остаток при х / у (х % у) | х = х / у
-|| **Постфиксный** инкремент         | ++     | **x++**| x присваиваеться значение x + 1            | x += 1          |
-|| **Постфиксный** декремент         | --     | **x--**| x присваиваеться значение x - 1            | x -= 1          |
+| Оператор                          | Символ | Пример | Операция                                   | Другими словами |
+|-----------------------------------|:------:|:------:|:------------------------------------------:|----------------:|
+| Присваивание                      | =      | x = y  | х присваиваеться значение y                | х становиться равно y
+| Сложение с присваиванием          | +=     | x += y | х присваиваеться x + y                     | х = х + у
+| Вычитание с присваиванием         | -=     | x -= y | х присваиваеться х - у                     | х = х - у
+| Умножение с присваиванием         | *=     | x *= y | х присваиваеться х * у                     | х = х * у
+| Деление с присваиванием           | /=     | x /= y | х присваиваеться х / у                     | х = х / у
+| Остаток от деления с присваиванием| %=     | x %= y | х присваиваеться остаток при х / у (х % у) | х = х / у
+| **Постфиксный** инкремент         | ++     | **x++**| x присваиваеться значение x + 1            | x += 1          |
+| **Постфиксный** декремент         | --     | **x--**| x присваиваеться значение x - 1            | x -= 1          |
 
+#  Приоритеты операторов в С++
 
+> В ниже представленной таблице (спасибо сайту ravesli.com) представлены все приоритеты в С++ с их приоритетами.
 
+> Чем ниже ассоциативность, тем приоритетнее он.
+
+<table class="tabluc" style="margin-bottom: 15px;"><tbody><tr><td><strong><span class="raznui_kolir_td">Ассоциативность</span></strong></td><td><strong><span class="raznui_kolir_td">Оператор</span></strong></td><td><strong><span class="raznui_kolir_td">Описание</span></strong></td><td><strong><span class="raznui_kolir_td">Пример</span></strong></td></tr><tr><td rowspan="2">1.&nbsp;Нет</td><td>::</td><td>Глобальная область видимости (унарный)</td><td>::name</td></tr><tr><td>::</td><td>Область видимости класса&nbsp;(бинарный)</td><td>class_name::member_name</td></tr><tr><td rowspan="16">2. L -&gt; R</td><td>()</td><td>Круглые скобки</td><td>(expression)</td></tr><tr><td>()</td><td>Вызов функции</td><td>function_name(parameters)</td></tr><tr><td>()</td><td>Инициализация</td><td>type name(expression)</td></tr><tr><td>{}</td><td>uniform-инициализация (C++11)</td><td>type name{expression}</td></tr><tr><td>type()</td><td>Конвертация типа</td><td>new_type(expression)</td></tr><tr><td>type{}</td><td>Конвертация типа (C++11)</td><td>new_type{expression}</td></tr><tr><td>[]</td><td>Индекс массива</td><td>pointer[expression]</td></tr><tr><td>.</td><td>Доступ к члену объекта</td><td>object.member_name</td></tr><tr><td>-&gt;</td><td>Доступ к члену объекта через указатель</td><td>object_pointer-&gt;member_name</td></tr><tr><td>++</td><td>Пост-инкремент</td><td>lvalue++</td></tr><tr><td>––</td><td>Пост-декремент</td><td>lvalue––</td></tr><tr><td>typeid</td><td>Информация о типе во время выполнения</td><td>typeid(type) or typeid(expression)</td></tr><tr><td>const_cast</td><td>Cast away const</td><td>const_cast(expression)</td></tr><tr><td>dynamic_cast</td><td>Type-checked cast во время выполнения</td><td>dynamic_cast(expression)</td></tr><tr><td>reinterpret_cast</td><td>Конвертация одного типа в другой</td><td>reinterpret_cast(expression)</td></tr><tr><td>static_cast</td><td>Type-checked cast во время компиляции</td><td>static_cast(expression)</td></tr><tr><td rowspan="14">3. R -&gt; L</td><td>+</td><td>Унарный&nbsp;плюс</td><td>+expression</td></tr><tr><td>—</td><td>Унарный&nbsp;минус</td><td>-expression</td></tr><tr><td>++</td><td>Пре-инкремент</td><td>++lvalue</td></tr><tr><td>––</td><td>Пре-декремент</td><td>––lvalue</td></tr><tr><td>!</td><td>Логическое&nbsp;НЕ (NOT)</td><td>!expression</td></tr><tr><td>~</td><td>Побитовое&nbsp;НЕ (NOT)</td><td>~expression</td></tr><tr><td>(type)</td><td>C-style cast</td><td>(new_type)expression</td></tr><tr><td>sizeof</td><td>Размер в&nbsp;байтах</td><td>sizeof(type) or sizeof(expression)</td></tr><tr><td>&amp;</td><td>Адрес</td><td>&amp;lvalue</td></tr><tr><td>*</td><td>Разыменование</td><td>*expression</td></tr><tr><td>new</td><td>Динамическое выделение памяти</td><td>new type</td></tr><tr><td>new[]</td><td>Динамическое выделение массива</td><td>new type[expression]</td></tr><tr><td>delete</td><td>Динамическое удаление памяти</td><td>delete pointer</td></tr><tr><td>delete[]</td><td>Динамическое удаление массива</td><td>delete[] pointer</td></tr><tr><td rowspan="2">4. L -&gt; R</td><td>-&gt;*</td><td>Member pointer selector</td><td>object_pointer-&gt;*pointer_to_member</td></tr><tr><td>.*</td><td>Member object selector</td><td>object.*pointer_to_member</td></tr><tr><td rowspan="3">5. L -&gt; R</td><td>*</td><td>Умножение</td><td>expression * expression</td></tr><tr><td>/</td><td>Деление</td><td>expression / expression</td></tr><tr><td>%</td><td>Деление с остатком</td><td>expression % expression</td></tr><tr><td rowspan="2">6. L -&gt; R</td><td>+</td><td>Сложение</td><td>expression + expression</td></tr><tr><td>—</td><td>Вычитание</td><td>expression — expression</td></tr><tr><td rowspan="2">7. L -&gt; R</td><td>&lt;&lt;</td><td>Побитовый сдвиг влево</td><td>expression &lt;&lt; expression</td></tr><tr><td>&gt;&gt;</td><td>Побитовый сдвиг&nbsp;вправо</td><td>expression &gt;&gt; expression</td></tr><tr><td rowspan="4">8. L -&gt; R</td><td>&lt;</td><td>Сравнение: меньше чем</td><td>expression &lt; expression</td></tr><tr><td>&lt;=</td><td>Сравнение: меньше чем или равно</td><td>expression &lt;=expression</td></tr><tr><td>&gt;</td><td>Сравнение: больше чем</td><td>expression &gt; expression</td></tr><tr><td>&gt;=</td><td>Сравнение: больше чем или равно</td><td>expression &gt;=expression</td></tr><tr><td rowspan="2">9. L -&gt; R</td><td>==</td><td>Равно</td><td>expression==expression</td></tr><tr><td>!=</td><td>Не равно</td><td>expression !=expression</td></tr><tr><td>10. L -&gt; R</td><td>&amp;</td><td>Побитовое И (AND)</td><td>expression &amp; expression</td></tr><tr><td>11. L -&gt; R</td><td>^</td><td>Побитовое исключающее ИЛИ (XOR)</td><td>expression ^ expression</td></tr><tr><td>12. L -&gt; R</td><td>|</td><td>Побитовое ИЛИ (OR)</td><td>expression | expression</td></tr><tr><td>13. L -&gt; R</td><td>&amp;&amp;</td><td>Логическое&nbsp;И (AND)</td><td>expression &amp;&amp; expression</td></tr><tr><td>14. L -&gt; R</td><td>||</td><td>Логическое ИЛИ (OR)</td><td>expression || expression</td></tr><tr><td rowspan="12">15. R -&gt; L</td><td>?:</td><td>Тернарный условный оператор</td><td>expression ? expression : expression</td></tr><tr><td>=</td><td>Присваивание</td><td>lvalue=expression</td></tr><tr><td>*=</td><td>Умножение с присваиванием</td><td>lvalue *=expression</td></tr><tr><td>/=</td><td>Деление с присваиванием</td><td>lvalue /=expression</td></tr><tr><td>%=</td><td>Деление с остатком и с присваиванием</td><td>lvalue %=expression</td></tr><tr><td>+=</td><td>Сложение с присваиванием</td><td>lvalue +=expression</td></tr><tr><td>-=</td><td>Вычитание с присваиванием</td><td>lvalue -=expression</td></tr><tr><td>&lt;&lt;=</td><td>Присваивание с побитовым сдвигом влево</td><td>lvalue &lt;&lt;=expression</td></tr><tr><td>&gt;&gt;=</td><td>Присваивание с побитовым сдвигом вправо</td><td>lvalue &gt;&gt;=expression</td></tr><tr><td>&amp;=</td><td>Присваивание с побитовой операцией И (AND)</td><td>lvalue &amp;=expression</td></tr><tr><td>|=</td><td>Присваивание с побитовой операцией&nbsp;ИЛИ (OR)</td><td>lvalue |=expression</td></tr><tr><td>^=</td><td>Присваивание с побитовой операцией «Исключающее ИЛИ» (XOR)</td><td>lvalue ^=expression</td></tr><tr><td>16. R -&gt; L</td><td>throw</td><td>Генерация исключения</td><td>throw expression</td></tr><tr><td>17. L -&gt; R</td><td>,</td><td>Оператор Запятая</td><td>expression, expression</td></tr></tbody></table>
