@@ -1,3 +1,6 @@
+[Установка С++](install-cpp.md)
+[С++ from Scratch](cpp-from-scratch.md)
+
 ![Wrapper](wrapper.png)
 
 # C++ And Nothing Else / RU
