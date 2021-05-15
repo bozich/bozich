@@ -12,26 +12,19 @@
 * I am: "starter" Frontend Developer, "basic" backend developer.
 
 # Skills:
-## Frontend stuff:
-* HTML, CSS: 70% (Good)
-* JavsScript (ES6, jQuery): 40% (Normal)
-* Bootstrap: 10% (Starter)
-* Materialize: 0% ("todo")
-* React: 0% ("todo")
+C++: I dont know... I'm learning it!
+C++/OpenGL: -||-
+Linux: I dont know, too. But i can install **Arch Linux**!
 
-## Backend stuff:
-* NodeJS: 50% (Good)
-* ExpressJS: 30% (Normal)
-
-## Computer using skills:
-* Linux (Ubuntu) Terminal / Basic skills: 90% (Very good)
-* Vi/Vim: 20% (Basic - Normal)
 
 # Projects / Products:
 \* No products yet...
 
 # Articles:
+___
+## \[I am still writing] Ravesli.com/C++ in one article!
 
+All about C++ from rvesli.com / Russian
 ___
 ## [Basic Linux Terminal Commands](http:/github.com/bozich/bozich.github.io/tree/master/articles/Linux_Terminal_Basics)
 
