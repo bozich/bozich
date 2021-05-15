@@ -22,7 +22,7 @@ Linux: I dont know, too. But i can install **Arch Linux**!
 
 # Articles:
 ___
-## \[I am still writing] Ravesli.com/C++ in one article!
+## \[I am still writing] [ravesli.com](ravesli.com/uroki-cpp)/C++ in one article!
 
 All about C++ from rvesli.com / Russian
 ___
