@@ -22,9 +22,9 @@ Linux: I dont know, too. But i can install **Arch Linux**!
 
 # Articles:
 ___
-## \[I am still writing] [ravesli.com](http://ravesli.com/uroki-cpp)/C++ in one article!
+## [\[I am still writing]](articles/ravesli-cpp) Ravesli.Com/C++ in one article!
 
-All about C++ from rvesli.com / Russian
+All about C++ from [ravesli.com](http://ravesli.com/uroki-cpp) / Russian
 ___
 ## [Basic Linux Terminal Commands](http:/github.com/bozich/bozich.github.io/tree/master/articles/Linux_Terminal_Basics)
 
